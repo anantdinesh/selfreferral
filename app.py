@@ -117,7 +117,7 @@ def render_results():
             st.info("""
             **📞 Call to Self-Refer:**
             
-            **(701) 234-6246**
+            **(701) 234-6715**
             
             or (701) 234-3360
             """)
