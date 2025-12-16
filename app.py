@@ -31,7 +31,7 @@ def determine_eligibility(data, bmi):
         
     if data['substance_abuse']:
         status = 'ineligible'
-        messages.append("Active substance abuse is a contraindication. Programs typically require a demonstrated period of sobriety/abstinence.")
+        messages.append("Active smoking > 1 pack per day is a contraindication. Programs typically requires 6 months of abstinence.")
 
     # 2. CONDITIONAL / WARNINGS
     if status != 'ineligible':
@@ -190,7 +190,7 @@ def main():
         
         active_cancer = st.checkbox("Active Cancer / Malignancy")
         active_infection = st.checkbox("Active Infection (requiring antibiotics)")
-        substance_abuse = st.checkbox("Active Substance Abuse (Alcohol or Drugs)")
+        substance_abuse = st.checkbox("Active Smoker > 1 pack per day")
         heart_lung_disease = st.checkbox("Severe Heart or Lung Disease (e.g., COPD requiring O2)")
 
         st.divider()
